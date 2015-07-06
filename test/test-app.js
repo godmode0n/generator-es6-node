@@ -30,12 +30,12 @@ describe('es6-node:app', function () {
 
   it('replaces the name of person with the given name', function(){
     var strVar="";
-        strVar += "import {expect} from \"chai\";\n";
-        strVar += "import Index from \".\/index\";\n";
+        strVar += "import {expect} from 'chai';\n";
+        strVar += "import Index from '.\/index';\n";
         strVar += "\n";
-        strVar += "describe(\"Index\", ()=>{\n";
-        strVar += "  it(\"says hello to someone\", ()=>{\n";
-        strVar += "    expect(new Index().hello(\"AuthorName\"), \"Hello AuthorName\");\n";
+        strVar += "describe('Index', ()=>{\n";
+        strVar += "  it('says hello to someone', ()=>{\n";
+        strVar += "    expect(new Index().sayHello('AuthorName'), 'Hello AuthorName');\n";
         strVar += "  });\n";
         strVar += "});\n";
         strVar += "";

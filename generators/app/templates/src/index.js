@@ -1,8 +1,8 @@
-export default Index{
+export default class Index{
 
   constructor(){}
 
   sayHello(toWhom){
-    return "Hello " + toWhom;
+    return 'Hello ' + toWhom;
   }
 }

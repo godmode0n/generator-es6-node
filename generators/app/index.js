@@ -30,24 +30,28 @@ module.exports = yeoman.generators.Base.extend({
       type : 'string',
       name : 'authorName',
       message : 'What\'s your name?',
-      default : yeoman.user
+      default : yeoman.user,
+      store : true
     }, {
       type : 'string',
       name : 'appName',
       message : 'What\'s your app name?',
-      default : 'Awesome App'
+      default : 'awesome-app',
+      store : true
     }, {
       type : 'string',
       name : 'appVersion',
       message : 'Wha\'s the version of this app?',
-      default : '0.0.1'
+      default : '0.0.1',
+      store : true
     }, {
       type: 'list',
       choices : ['gulp'],
       name: 'task runner',
       message: 'Would you like to enable this option?',
       store : true,
-      default : 'gulp'
+      default : 'gulp',
+      store : true
     }];
 
 
@@ -74,10 +78,7 @@ module.exports = yeoman.generators.Base.extend({
 
 
   install: function () {
-    var done = this.async();
-    this.npmInstall("", function(){
-        logo();
-        done();
-    });
+    this.npmInstall();
+    logo();
   }
 });
