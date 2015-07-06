@@ -1,0 +1,31 @@
+{
+  "name": "generator-es6-node",
+  "version": "0.0.0",
+  "description": "Yeoman generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "godmode0n/generator-es6-node",
+  "author": {
+    "name": "godmode0n",
+    "email": "",
+    "url": "https://github.com/godmode0n"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "ascii-art": "0.0.2-alpha",
+    "chalk": "^1.0.0",
+    "yeoman-generator": "^0.19.0",
+    "yosay": "^1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
