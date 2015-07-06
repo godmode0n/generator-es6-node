@@ -17,7 +17,11 @@
     "generators"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "es6",
+    "es6-node",
+    "node",
+    "gulp"
   ],
   "dependencies": {
     "ascii-art": "0.0.2-alpha",
