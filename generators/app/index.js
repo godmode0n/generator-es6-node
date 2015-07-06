@@ -21,9 +21,9 @@ module.exports = yeoman.generators.Base.extend({
   prompting: function () {
     var done = this.async();
 
-    // Have Yeoman greet the user.
+
     this.log(yosay(
-      'Welcome to the bee\'s knees ' + chalk.red('Es6Node') + ' generator!'
+      'Welcome to godmode0n\'s ' + chalk.red('es6 node') + ' generator!'
     ));
 
     var prompts = [{
@@ -48,10 +48,9 @@ module.exports = yeoman.generators.Base.extend({
       type: 'list',
       choices : ['gulp'],
       name: 'task runner',
-      message: 'Would you like to enable this option?',
+      message: 'What would you like to use as a task runner?',
       store : true,
-      default : 'gulp',
-      store : true
+      default : 'gulp'
     }];
 
 
@@ -76,9 +75,10 @@ module.exports = yeoman.generators.Base.extend({
     }
   },
 
-
   install: function () {
-    this.npmInstall();
-    logo();
+    this.npmInstall("", null, function(){
+      this.log(yosay('Thx and remember:\n\n'));
+      logo();
+    }.bind(this));
   }
 });
