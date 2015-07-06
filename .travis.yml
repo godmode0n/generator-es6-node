@@ -1,0 +1,14 @@
+sudo: false
+language: node_js
+node_js:
+- iojs
+- '0.12'
+- '0.10'
+deploy:
+  provider: npm
+  email: bbugarschi@gmail.com
+  api_key:
+    secure: fRw4BWMwBEpYx4GF84VMYwQL778+1G22WSws8VzsDqVF5WuOSnsPzErg3PNrxSpaUaosiPCV1VE9q1QRizs23CaOudAjzqutOT3XlhmtpaKZneY2dawpFQMKn3t7hHEWF3gfe0I5dDnwdMfZe5QNcDB8397Nk/evPUVtv8WfO3Z0WLIwWFU8Q+Y37Y2RpFZGjFyQOGSTNcuVpIu8hE7qY8ZkYJHQWGYYiD/rtZqe6CA95B2ZVe6cBYqxZG3e6hCUPDalgin158SLqpENEj1iESf3cAbv+iAO8DYF1AZaoK1U7tl3O91R7L4hqE7vqSWkNLFtuuN4Z7h3ce0FLzE4X6ZESJsbzh4c12wR7+uPDzHX03EdOodZ40n3Z95lsdFMn7x7TIVLJWRAjaQUSGMGkljWu/pf3zFBcvNPtU4UC5JcCeUEdPnRn4DZO4dyNh+4zhTDwFms0n0+yA3/UoDR7IGwkjuvE1tAuAjXreboxiZpO/eTn/IDW/uTAz+/ODrlcWQERhJ0PPQODERd6FUaIbWktZRikaGi0PLlYuc6DH/w5Uk2u4uHzzbthtFY9KNp2LRuZAO7ExmF0mLaCL0YnHpGhEbUABi1YWpsIFk9VUSn6e0CRqvK5yNlRHpFHd/HZfJb8IYpuff5cMuNjHS7LwadO4vpI4tO+WvWkw1Eh+A=
+  on:
+    tags: true
+    repo: godmode0n/generator-es6-node
